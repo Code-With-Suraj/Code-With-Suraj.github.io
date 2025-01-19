@@ -17,27 +17,69 @@
 <body class="bg-gray-100">
     <!-- Navigation -->
     <nav class="fixed w-full bg-white shadow-lg z-50">
-        <div class="container mx-auto px-6 py-3 ">
-            <div class="flex items-center justify-between ">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
                 <div
-                    class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent animate-gradient ">
+                    class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent animate-pulse">
                     <a href="/">Suraj Singh</a>
                 </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden block text-gray-700 hover:text-blue-500 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <!-- Navigation Links (Desktop) -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-blue-500 transition">Home</a>
-                    <a href="#about" class="text-gray-700 hover:text-blue-500 transition">About</a>
-                    <a href="#projects" class="text-gray-700 hover:text-blue-500 transition">Projects</a>
-                    <a href="#resume" class="text-gray-700 hover:text-blue-500 transition">Resume</a>
-                    <a href="#contact" class="text-gray-700 hover:text-blue-500 transition">Contact</a>
+                    <a href="#home" class="text-gray-700 hover:text-blue-500 transition duration-300 ease-in-out">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-500 transition duration-300 ease-in-out">
+                        <i class="fas fa-user"></i> About
+                    </a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-500 transition duration-300 ease-in-out">
+                        <i class="fas fa-laptop-code"></i> Projects
+                    </a>
+                    <a href="#resume" class="text-gray-700 hover:text-blue-500 transition duration-300 ease-in-out">
+                        <i class="fas fa-file-alt"></i> Resume
+                    </a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-500 transition duration-300 ease-in-out">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
                 </div>
-                <!-- Social Media Links -->
-                <div class="hidden md:flex space-x-4">
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden">
+                <a href="#home"
+                    class="text-gray-700 py-2 hover:text-blue-500 transition duration-300 ease-in-out flex items-center">
+                    <i class="fas fa-home mr-2"></i> Home
+                </a>
+                <a href="#about"
+                    class="text-gray-700 py-2 hover:text-blue-500 transition duration-300 ease-in-out flex items-center">
+                    <i class="fas fa-user mr-2"></i> About
+                </a>
+                <a href="#projects"
+                    class="text-gray-700 py-2 hover:text-blue-500 transition duration-300 ease-in-out flex items-center">
+                    <i class="fas fa-laptop-code mr-2"></i> Projects
+                </a>
+                <a href="#resume"
+                    class="text-gray-700 py-2 hover:text-blue-500 transition duration-300 ease-in-out flex items-center">
+                    <i class="fas fa-file-alt mr-2"></i> Resume
+                </a>
+                <a href="#contact"
+                    class="text-gray-700 py-2 hover:text-blue-500 transition duration-300 ease-in-out flex items-center">
+                    <i class="fas fa-envelope mr-2"></i> Contact
+                </a>
+                <!-- Social Links for Mobile -->
+                <div class="flex justify-center space-x-4 mt-4">
                     <a href="https://github.com/Code-With-Suraj" target="_blank"
-                        class="text-gray-600 hover:text-blue-500 transition">
+                        class="text-gray-600 hover:text-blue-500 transition duration-300 ease-in-out">
                         <i class="fab fa-github text-xl"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/suraj-singh-mis/" target="_blank"
-                        class="text-gray-600 hover:text-blue-500 transition">
+                        class="text-gray-600 hover:text-blue-500 transition duration-300 ease-in-out">
                         <i class="fab fa-linkedin text-xl"></i>
                     </a>
                 </div>
@@ -331,11 +373,14 @@
             </div>
         </div>
     </section>
-                <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+
+    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
         <p>&copy; 2025 Suraj Singh. All rights reserved.</p>
     </footer>
 
+
     <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
