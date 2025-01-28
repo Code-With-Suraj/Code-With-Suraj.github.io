@@ -1,3 +1,9 @@
+const sliderContainer = document.querySelector('.slider-container');
+const prevButton = document.querySelector('.slider-prev');
+const nextButton = document.querySelector('.slider-next');
+
+let currentIndex = 0;
+
 // Typed.js initialization
 new Typed('#typed', {
     stringsElement: '#typed-strings',
@@ -33,3 +39,19 @@ menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
 
+function updateSlider() {
+    const slideWidth = sliderContainer.firstElementChild.offsetWidth;
+    sliderContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
+
+prevButton.addEventListener('click', () => {
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : 0;
+    updateSlider();
+});
+
+nextButton.addEventListener('click', () => {
+    currentIndex = currentIndex < sliderContainer.children.length - 1 ? currentIndex + 1 : currentIndex;
+    updateSlider();
+});
+
+window.addEventListener('resize', updateSlider);
