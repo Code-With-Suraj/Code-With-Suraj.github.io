@@ -1021,6 +1021,14 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        padding: 0.6rem 0;
+    }
+
+    #home {
+        padding-top: 120px;
+    }
+
     .nav-links {
         position: fixed;
         top: -100%;
@@ -1036,7 +1044,7 @@ footer {
     }
 
     .nav-links.active {
-        top: 70px;
+        top: 60px;
     }
 
     .nav-links li {
