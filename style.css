@@ -968,6 +968,14 @@ footer {
 /* Responsive Styles */
 @media screen and (max-width: 991px) {
 
+    header {
+        padding: 0.6rem 0;
+    }
+
+    #home {
+        padding-top: 120px;
+    }
+
     .home-content,
     .about-content {
         flex-direction: column;
@@ -1081,6 +1089,14 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    header {
+        padding: 0.6rem 0;
+    }
+
+    #home {
+        padding-top: 120px;
+    }
+
     .profile-img {
         width: 250px;
         height: 250px;
