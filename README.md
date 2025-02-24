@@ -25,6 +25,3 @@ This repository contains a personal portfolio website showcasing various data an
 
 ## Author
 Suraj Singh - Data Analyst & Visualization Specialist
-
-## License
-[Your License Here]
